@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 
 import { FavoritesPage } from './../pages/favorites/favorites';
+import { QuotesService } from '../services/quotes';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { FavoritesPage } from './../pages/favorites/favorites';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    QuotesService
   ]
 })
 export class AppModule {}
