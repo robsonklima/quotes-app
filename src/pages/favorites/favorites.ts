@@ -27,13 +27,17 @@ export class FavoritesPage {
     modal.present();    
     modal.onDidDismiss((unfavorite: boolean) => {
       if (unfavorite) {
-        this.quotesService.removeQuoteFromFavorites(quote);
-        const foundQuote = this.quotes.findIndex((quoteEl: Quote) => {
-          return quoteEl.id == quote.id;
-        });
-
-        this.quotes.splice(foundQuote, 1);
+        this.onRemoveFromFavorites(quote);
       }
     });
+  }
+
+  onRemoveFromFavorites(quote: Quote) {
+    this.quotesService.removeQuoteFromFavorites(quote);
+    const foundQuote = this.quotes.findIndex((quoteEl: Quote) => {
+      return quoteEl.id == quote.id;
+    });
+
+    this.quotes.splice(foundQuote, 1);
   }
 }
