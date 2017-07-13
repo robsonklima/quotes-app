@@ -13,6 +13,7 @@ import { MyApp } from './app.component';
 
 import { FavoritesPage } from './../pages/favorites/favorites';
 import { QuotesService } from '../services/quotes';
+import { SettingsService } from './../services/settings';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { QuotesService } from '../services/quotes';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    QuotesService
+    QuotesService,
+    SettingsService
   ]
 })
 export class AppModule {}
