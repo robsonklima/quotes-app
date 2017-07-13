@@ -1,6 +1,6 @@
 export default [
   {
-    category: 'inspirational',
+    category: 'Inspirational',
     quotes: [
       {
         id: '1',
@@ -21,7 +21,7 @@ export default [
     icon: 'brush'
   },
   {
-    category: 'ability',
+    category: 'Ability',
     quotes: [
       {
         id: '4',
@@ -37,7 +37,7 @@ export default [
     icon: 'bicycle'
   },
   {
-    category: 'enthusiasm',
+    category: 'Enthusiasm',
     quotes: [
       {
         id: '6',
@@ -53,7 +53,7 @@ export default [
     icon: 'battery-charging'
   },
   {
-    category: 'motivational',
+    category: 'Motivational',
     quotes: [
       {
         id: '8',
