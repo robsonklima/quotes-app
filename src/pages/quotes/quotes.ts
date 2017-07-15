@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { NavParams, AlertController } from 'ionic-angular';
 
 import { Quote } from './../../data/quote.interface';
-import { QuotesService } from '../../services/quotes';
+import { QuotesService } from './../../services/quotes';
 
 @Component({
   selector: 'page-quotes',
-  templateUrl: 'quotes.html',
+  templateUrl: 'quotes.html'
 })
 export class QuotesPage implements OnInit {
   quoteGroup: { category: string, quotes: Quote[], icon: string };
